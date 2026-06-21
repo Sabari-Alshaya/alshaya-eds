@@ -126,6 +126,14 @@ export function decorateMain(main) {
   decorateButtons(main);
 }
 
+export function getHref() {
+  if (window.location.href !== 'about:srcdoc') return window.location.href;
+
+  const { location: parentLocation } = window.parent;
+  const urlParams = new URLSearchParams(parentLocation.search);
+  return `${parentLocation.origin}${urlParams.get('path')}`;
+}
+
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
@@ -138,6 +146,12 @@ async function loadEager(doc) {
     decorateMain(main);
     document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);
+  }
+
+  const path = getHref();
+   if (path.includes('/ar/')) {
+    document.documentElement.lang = 'ar';
+    document.documentElement.dir = 'rtl';
   }
 
   try {

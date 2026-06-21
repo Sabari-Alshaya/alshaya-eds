@@ -30,4 +30,36 @@
     flex: 1;
     order: unset;
   }
+
+  .columns-wrapper h1,
+  .columns-wrapper .button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+.columns-wrapper table {
+  width: 100%;
+  text-align: center;
+}
+.columns-wrapper table th,
+.columns-wrapper table td {
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.columns-wrapper table td h2 {
+  font-size: 4rem;
+  color: var(--dark-color);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (width <= 900px) {
+  .columns-wrapper h1,
+  .columns-wrapper .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 }

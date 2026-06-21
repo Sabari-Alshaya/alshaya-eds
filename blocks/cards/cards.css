@@ -25,3 +25,17 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.feature-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 24px;
+ }
+ @media (width <= 900px) {
+  .feature-section ul {
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  }
+ }

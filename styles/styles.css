@@ -10,48 +10,107 @@
  * governing permissions and limitations under the License.
  */
 
-:root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
-
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
-
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
-
-  /* nav height */
-  --nav-height: 64px;
-}
 
 /* fallback fonts */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
+  font-family: 'AlshayaGroup-regular';
+    src: url('../fonts/AlshayaGroup-Regular.eot');
+    src: url('../fonts/AlshayaGroup-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlshayaGroup-Regular.woff') format('woff'),
+        url('../fonts/AlshayaGroup-Regular.ttf') format('truetype'),
+        url('../fonts/AlshayaGroup-Regular.svg#AlshayaGroup-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+    font-family: 'AlshayaGroup-light';
+    src: url('../fonts/AlshayaGroup-Light.eot');
+    src: url('../fonts/AlshayaGroup-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlshayaGroup-Light.woff') format('woff'),
+        url('../fonts/AlshayaGroup-Light.ttf') format('truetype'),
+        url('AlshayaGroup-Light.svg#AlshayaGroup-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'AlshayaGroup-bold';
+    src: url('AlshayaGroup-Bold.eot');
+    src: url('../fonts/AlshayaGroup-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlshayaGroup-Bold.woff') format('woff'),
+        url('../fonts/AlshayaGroup-Bold.ttf') format('truetype'),
+        url('../fonts/AlshayaGroup-Bold.svg#AlshayaGroup-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Regular';
+    src: url('../fonts/PTSans-Regular.ttf'),
+         url('../fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'PT Sans Italic';
+    src: url('../fonts/PTSans-Italic.ttf'),
+         url('../fonts/PTSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../fonts/PTSans-Bold.ttf'),
+         url('../fonts/PTSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'PT Sans BoldItalic';
+    src: url('../fonts/PTSans-BoldItalic.ttf'),
+         url('../fonts/PTSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Al Marai Light';
+    src: url('../fonts/Almarai-Light.ttf'),
+         url('../fonts/Almarai-Light.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'Al Marai Regular';
+    src: url('../fonts/Almarai-Regular.ttf'),
+         url('../fonts/Almarai-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'Al Marai Bold';
+    src: url('../fonts/Almarai-Bold.ttf'),
+         url('../fonts/Almarai-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'Al Marai ExtraBold';
+    src: url('../fonts/Almarai-ExtraBold.ttf'),
+         url('../fonts/Almarai-ExtraBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
 
 @media (width >= 900px) {
   :root {
@@ -70,6 +129,43 @@
   }
 }
 
+
+:root {
+  /* colors */
+  --background-color: white;
+  --light-color: #f8f8f8;
+  --dark-color: #2a588d;
+  --text-color: #43474e;
+  --link-color: #29588c;
+  --link-hover-color: #29588c;
+  --white-color: #ffffff;
+
+  /* fonts */
+  --body-font-family:  'AlshayaGroup-regular', roboto, roboto-fallback, sans-serif;
+  --heading-font-family:  'AlshayaGroup-regular', roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-strong-font-family:  'AlshayaGroup-medium', roboto-condensed, roboto-condensed-fallback, sans-serif;
+
+  /* body sizes */
+  --body-font-size-m: 1.6rem;
+  --body-font-size-s: 1.4rem;
+  --body-font-size-xs: 1.2rem;
+
+  /* heading sizes */
+  --heading-font-size-xxl: 3.4rem;
+  --heading-font-size-xl: 2.8rem;
+  --heading-font-size-l: 2.4rem;
+  --heading-font-size-m: 2.0rem;
+  --heading-font-size-s: 1.8rem;
+  --heading-font-size-xs: 1.6rem;
+
+  /* nav height */
+  --nav-height: 64px;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
   display: none;
   margin: 0;
@@ -85,7 +181,7 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  height: 12rem;
 }
 
 header .header,
@@ -104,12 +200,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0.8rem;
+  margin-bottom: 0.25rem;
   font-family: var(--heading-font-family);
   font-weight: 600;
   line-height: 1.25;
-  scroll-margin: 40px;
+  scroll-margin: 4.0rem;
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -125,8 +221,8 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 code,
@@ -135,15 +231,15 @@ pre {
 }
 
 pre {
-  padding: 16px;
-  border-radius: 8px;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
   background-color: var(--light-color);
   overflow-x: auto;
   white-space: pre;
 }
 
 main > div {
-  margin: 40px 16px;
+  margin: 4.0rem 1.6rem;
 }
 
 input,
@@ -179,8 +275,8 @@ button.button {
   max-width: 100%;
   margin: 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: 2.4rem;
+  padding: 1em 2.2rem 0.5em;
   font: inherit;
   font-weight: 500;
   line-height: 1.25;
@@ -199,9 +295,9 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: var(--link-color);
+  background-color: var(--link-color);
+  color: var(--white-color);
 }
 
 a.button.primary:hover,
@@ -297,29 +393,47 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 4.0rem 0;
 }
 
-main > .section > div {
+main > .section > div:not(.carousel-wrapper) {
   max-width: 1200px;
   margin: auto;
-  padding: 0 24px;
+  padding: 0 2.4rem;
 }
 
+main > .video-carousel.section > div {
+  max-width: none;
+  padding: 0;
+}
 main > .section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
-}
 
 /* section metadata */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
-  padding: 40px 0;
+  padding: 4.0rem 0;
+}
+
+/* Hide by default (Mobile and Tablet views) */
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: block;
+}
+
+/* Show only on Desktop view */
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block; /* Use block, flex, grid, etc. depending on your layout */
+  }
+  .mobile-only {
+    display: none;
+  }
 }
